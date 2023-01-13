@@ -16,12 +16,12 @@ function calculateAverage(intArr) {
     return result / intArr.length;
 }
 
-function parseStringToInt(stringValue) {
+function parseStringToFloat(stringValue) {
     if (isNaN(stringValue)) {
         throw new Error(stringValue + " is not a number");
     }
 
-    return parseInt(stringValue);
+    return parseFloat(stringValue);
 }
 
 function getValueFromElement(elementId) {
@@ -40,9 +40,9 @@ function handleOnClickAverageButton(_) {
         const thirdNumberValue = getValueFromElement("third-number");
 
         let intArr = [
-            parseStringToInt(firstNumberValue),
-            parseStringToInt(secondNumberValue),
-            parseStringToInt(thirdNumberValue)
+            parseStringToFloat(firstNumberValue),
+            parseStringToFloat(secondNumberValue),
+            parseStringToFloat(thirdNumberValue)
         ];
 
         const averageResult = calculateAverage(intArr);
