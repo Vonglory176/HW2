@@ -1,5 +1,28 @@
  body {
-    margin: 50px;
     font-family: Helvetica, sans-serif;
-    font-size: 150%;
+    font-size: 150%; 
 }
+
+#main {
+    background-color: turquoise;
+    text-align: center;
+    height: 350px;
+    width: 500px;
+    padding: 0px 10px 25px 10px;/*top,right,bottom,left*/
+    border-style: solid;
+}
+
+h2 {
+    background-color: lightgrey;
+    border-style: solid;
+}
+
+form {
+    background-color: lightgrey;
+    padding: 10px 0px 15px 0px; /*top,right,bottom,left*/
+    border-style: solid;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+button {margin:15px;}

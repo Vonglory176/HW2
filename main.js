@@ -31,6 +31,11 @@ function getValueFromElement(elementId) {
 function displayResult(resultAsString) {
     console.log(resultAsString);
     document.getElementById("result-content").innerHTML = resultAsString;
+
+    //CHANGES HERE: Adding CSS to output
+    document.getElementById("result-content").style.backgroundColor="lightgrey";
+    document.getElementById("result-content").style.borderStyle="dotted";
+    document.getElementById("result-content").style.margin="0px 50px 0px 50px"; //top,right,bottom,left
 }
 
 function handleOnClickAverageButton(_) {
